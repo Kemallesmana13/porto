@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portofolio Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Fortofolio</h1>
+    </header>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Hi, I'm Kemal Lesmana</h1>
+          <p>A Passionate develover specializing in creating modern web solutions.</p>
+          <button onclick="location.href='portofolio.html'">View Portofolio</button>
+          <button onclick="location.href='contact.html'">Contact Me</button>
+        </div>
+        <img src="assets/photo_2024-12-27_21-27-36.jpg" alt="My Photos" />
+      </section>
+      <!-- About Me Section -->
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          I am a web develover with a strong background in front-end development, focusing on creating beautiful and functional user experiences. I am passionate about learning new technologies and solving complex problems.I enjoy
+          collaborating with teams to bring creatives ideas to life.
+        </p>
+        <p>When i'm not coding, you'll find me exploring new trends in design,playing video games,or hiking in nature</p>
+      </section>
+      <!-- Skill Section -->
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong>HTML, CSS, JavaScript, Python</li>
+          <li><strong>Frameworks:</strong>React, Vue.js, Node.js, Express</li>
+          <li><strong>Tools:</strong>Git, Docker, VSCode, Figma, Photoshop</li>
+          <li><strong>Database:</strong>MongoDB, PostgreSQL, MySQL</li>
+        </ul>
+      </section>
+      <!-- Portofolio Section -->
+      <section class="portofolio">
+        <h2>My Projects</h2>
+        <div class="grid">
+          <div class="project">
+            <img src="assets/eCom.jpg" alt="Project 1" style="width: 300px; height: auto" />
+            <h3>Project 1: E-Commerce Website</h3>
+            <p>An online store for a fashion brand with a modern UI/UX and secure payment system.</p>
+          </div>
+          <div class="project">
+            <img src="assets/interactive.jpeg" alt="project 2" style="width: 300px; height: 200px" />
+            <h3>Project 2: Interactive Dashboard</h3>
+            <p>A data-driven dashboard with visualizations using D3.js and interactive filters.</p>
+          </div>
+          <div class="project">
+            <img src="assets/porto.jpeg" alt="project 3" style="width: 300px; height: auto" />
+            <h3>Project 3: Portofolio Website</h3>
+            <p>My personal portfolio website with features like chatbots and data visualizations.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial Section -->
+      <section class="testimonials">
+        <h2>What Clients Say</h2>
+        <div class="testimonial">
+          <p>"Kemal is a fantastic developer! He turned our ideas into reality with a great user interface and seamless user experience. Highly recommended!"</p>
+          <h3>- Jhon walker</h3>
+        </div>
+        <div class="testimonial">
+          <p>"I had the pleasure of working with [Your Name] on several projects. His attention to detail and problem-solving skills are top-notch!"</p>
+          <h3>- Alison Park</h3>
+        </div>
+      </section>
+      <!-- Chart.js Example: Data Visualization -->
+      <section>
+        <h2>My Achievments</h2>
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <button class="toggle-mode">Toggle Dark Mode</button>
+      </section>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <button id="scrollToTopBtn" class="scroll-btn">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

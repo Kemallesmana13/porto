@@ -1,0 +1,221 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #1e40af;
+}
+header {
+  background-color: #1e40af;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.hero img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.hero-text {
+  max-width: 600px;
+}
+.hero-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.hero-text button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #facc15;
+  color: #1e40af;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.portofolio {
+  margin: 50px 0;
+}
+.portofolio h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.project:hover {
+  transform: translateY(-10px);
+}
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+.project h3 {
+  margin-top: 10px;
+}
+/* dark mode */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f3f4f6;
+}
+body.dark-mode header {
+  background-color: #333;
+}
+body.dark-mode .project {
+  background-color: #333;
+  color: #f3f4f6;
+}
+body.dark-mode .hero-text button {
+  background-color: #f3f4f6;
+  color: #1e40af;
+}
+button.toggle-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #facc15;
+  color: #1e40af;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+button.toggle-mode:hover {
+  background-color: #1e1e1e;
+  color: #facc15;
+  transition: background-color 0.5s ease-in-out;
+}
+.charts {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.about,
+.skills,
+.portofolio,
+.testimonial,
+.charts {
+  margin: 50px 0;
+}
+.about p,
+.skills ul {
+  text-align: center;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+.skills li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.testimonials {
+  background-color: #f3f4f6;
+  padding: 40px;
+  text-align: center;
+}
+.testimonial {
+  margin: 20px;
+  font-style: italic;
+}
+.testimonial h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+}
+.scroll-btn:hover {
+  background-color: #facc15;
+}
+.project,
+.testimonial {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.project.visible,
+.testimonial.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.contact form {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background-color: #facc15;
+  color: #1e40af;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.back-home,
+.to-contact {
+  text-decoration: none;
+  color: #facc15;
+}
+.to-contact:hover {
+  text-decoration: underline;
+}
+.back-home:hover {
+  text-decoration: underline;
+}
